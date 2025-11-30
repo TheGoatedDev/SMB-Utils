@@ -1,29 +1,93 @@
-# Create T3 App
+# SMB Utils
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+A unified platform of purpose-built tools designed to help small and medium businesses navigate operational complexity.
 
-## What's next? How do I make an app with this?
+## Overview
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+SMB Utils targets the "spreadsheet gap" — businesses too large for manual processes but too small for complex enterprise solutions. The platform bundles focused utilities under a single subscription to provide immediate value without feature bloat.
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+### Core Utilities
+- **Cash Runway Tracking**: Monitor financial health and runway.
+- **Tax Nexus Monitoring**: Keep track of tax obligations across jurisdictions.
+- **Vendor Compliance**: Manage vendor requirements and status.
+- **Supplier Diversity Documentation**: Simplify diversity certification and documentation.
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+## Tech Stack
 
-## Learn More
+This project is built with the [T3 Stack](https://create.t3.gg/) and modern web technologies:
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+- **Framework**: [Next.js 15](https://nextjs.org) (App Router)
+- **Language**: [TypeScript](https://www.typescriptlang.org)
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com) & [Motion](https://motion.dev/)
+- **Database**: [MySQL](https://www.mysql.com) (via Docker) with [Prisma ORM](https://www.prisma.io)
+- **API**: [tRPC](https://trpc.io)
+- **Authentication**: [Better Auth](https://better-auth.com)
+- **Email**: [React Email](https://react.email)
+- **Tooling**: [Biome](https://biomejs.dev) (Linting/Formatting), [pnpm](https://pnpm.io)
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+## Getting Started
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+### Prerequisites
+- Node.js (Latest LTS recommended)
+- [pnpm](https://pnpm.io/installation)
+- Docker (for local database)
 
-## How do I deploy this?
+### Installation
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd smbutils
+   ```
+
+2. **Install dependencies**
+   ```bash
+   pnpm install
+   ```
+
+3. **Environment Setup**
+   Copy the example environment file and update variables:
+   ```bash
+   cp .env.example .env
+   ```
+
+4. **Start the Database**
+   Start the local MySQL instance:
+   ```bash
+   ./start-database.sh
+   ```
+
+5. **Initialize Database**
+   Push the schema to your local database:
+   ```bash
+   pnpm db:push
+   ```
+
+6. **Start Development Server**
+   ```bash
+   pnpm dev
+   ```
+   The app should now be running at `http://localhost:3000`.
+
+## Scripts
+
+- `pnpm dev` - Start the development server
+- `pnpm build` - Build the application for production
+- `pnpm start` - Start the production server
+- `pnpm db:push` - Push Prisma schema changes to the database
+- `pnpm db:studio` - Open Prisma Studio to view/edit data
+- `pnpm email` - Start the React Email preview server
+- `pnpm check` - Run Biome linter/formatter check
+
+## Project Structure
+
+- `src/app` - Next.js App Router pages and layouts
+- `src/server` - Backend logic (tRPC routers, DB client, Auth)
+- `src/components` - React components (UI library, shared components)
+- `src/emails` - React Email templates
+- `prisma/schema.prisma` - Database schema definition
+- `AI_NOTES/` - Project documentation and design notes
+
+## License
+
+Proprietary. All rights reserved.
