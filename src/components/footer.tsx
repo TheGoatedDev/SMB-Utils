@@ -4,27 +4,15 @@ import { Logo } from "@/components/logo";
 const links = [
 	{
 		title: "Features",
-		href: "#",
+		href: "#features",
 	},
 	{
 		title: "Solution",
-		href: "#",
-	},
-	{
-		title: "Customers",
-		href: "#",
+		href: "#solution",
 	},
 	{
 		title: "Pricing",
-		href: "#",
-	},
-	{
-		title: "Help",
-		href: "#",
-	},
-	{
-		title: "About",
-		href: "#",
+		href: "#pricing",
 	},
 ];
 

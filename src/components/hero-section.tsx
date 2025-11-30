@@ -197,20 +197,12 @@ export default function HeroSection() {
 						>
 							<div className="mask-b-from-55% -mr-56 relative mt-8 overflow-hidden px-2 sm:mt-12 sm:mr-0 md:mt-20">
 								<div className="relative inset-shadow-2xs mx-auto max-w-6xl overflow-hidden rounded-2xl border bg-background p-4 shadow-lg shadow-zinc-950/15 ring-1 ring-background dark:inset-shadow-white/20">
-									<Image
-										alt="app screen"
-										className="relative hidden aspect-15/8 rounded-2xl bg-background dark:block"
-										height="1440"
-										src="/mail2.png"
-										width="2700"
-									/>
-									<Image
-										alt="app screen"
-										className="relative z-2 aspect-15/8 rounded-2xl border border-border/25 dark:hidden"
-										height="1440"
-										src="/mail2-light.png"
-										width="2700"
-									/>
+									{/* TODO: Add app screenshot later */}
+									<div className="flex aspect-15/8 items-center justify-center rounded-2xl bg-muted">
+										<span className="font-bold text-4xl text-muted-foreground">
+											Coming Soon
+										</span>
+									</div>
 								</div>
 							</div>
 						</AnimatedGroup>
