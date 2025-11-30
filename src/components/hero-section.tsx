@@ -90,7 +90,7 @@ export default function HeroSection() {
 										href="#link"
 									>
 										<span className="text-foreground text-sm">
-											Built for businesses in the $300K-$10M range
+											Know exactly how long your money will last
 										</span>
 										<span className="block h-4 w-0.5 border-l bg-white dark:border-background dark:bg-zinc-700"></span>
 
@@ -133,10 +133,10 @@ export default function HeroSection() {
 									preset="fade-in-blur"
 									speedSegment={0.3}
 								>
-									Purpose-built utilities that solve one problem exceptionally
-									well — cash runway tracking, tax nexus monitoring, vendor
-									compliance — without the bloat of enterprise software or the
-									fragility of spreadsheets.
+									Track your cash runway with real-time updates from your
+									financial tools. Get proactive alerts before you run out of
+									money, without the bloat of enterprise software or the
+									fragility of spreadsheets. More tools coming soon.
 								</TextEffect>
 
 								<AnimatedGroup

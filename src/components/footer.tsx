@@ -49,13 +49,14 @@ export default function FooterSection() {
 				</div>
 				<div className="my-8 flex flex-wrap justify-center gap-6 text-sm">
 					<Link
-						aria-label="TikTok"
+						aria-label="GitHub"
 						className="block text-muted-foreground hover:text-primary"
-						href="#"
+						href="https://github.com/thegoateddev/smb-utils"
 						rel="noopener noreferrer"
 						target="_blank"
 					>
 						<svg
+							className="size-6 fill-current"
 							role="img"
 							viewBox="0 0 24 24"
 							xmlns="http://www.w3.org/2000/svg"
