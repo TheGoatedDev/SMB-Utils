@@ -88,32 +88,26 @@ export const HeroHeader = () => {
 							</div>
 							<div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
 								<Button
-									asChild
 									className={cn(isScrolled && "lg:hidden")}
+									disabled
 									size="sm"
 									variant="outline"
 								>
-									<Link href="#">
-										<span>Login</span>
-									</Link>
+									<span>Login</span>
 								</Button>
 								<Button
-									asChild
 									className={cn(isScrolled && "lg:hidden")}
+									disabled
 									size="sm"
 								>
-									<Link href="#">
-										<span>Sign Up</span>
-									</Link>
+									<span>Sign Up</span>
 								</Button>
 								<Button
-									asChild
 									className={cn(isScrolled ? "lg:inline-flex" : "hidden")}
+									disabled
 									size="sm"
 								>
-									<Link href="#">
-										<span>Get Started</span>
-									</Link>
+									<span>Get Started</span>
 								</Button>
 							</div>
 						</div>

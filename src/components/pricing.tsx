@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
-import Link from "next/link";
 
 export default function Pricing() {
 	return (
@@ -29,8 +28,8 @@ export default function Pricing() {
 								</p>
 							</div>
 
-							<Button asChild variant="outline" className="w-full">
-								<Link href="#">Get Started</Link>
+							<Button disabled variant="outline" className="w-full">
+								Get Started
 							</Button>
 
 							<hr className="border-dashed" />
@@ -64,8 +63,8 @@ export default function Pricing() {
 									</p>
 								</div>
 
-								<Button asChild className="w-full">
-									<Link href="#">Get Started</Link>
+								<Button disabled className="w-full">
+									Get Started
 								</Button>
 							</div>
 
