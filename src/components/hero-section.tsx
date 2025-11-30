@@ -107,14 +107,24 @@ export default function HeroSection() {
 									</Link>
 								</AnimatedGroup>
 
-								<TextEffect
-									as="h1"
-									className="mx-auto mt-8 max-w-4xl text-balance text-5xl max-md:font-semibold md:text-7xl lg:mt-16 xl:text-[5.25rem]"
-									preset="fade-in-blur"
-									speedSegment={0.3}
-								>
-									Outgrown Spreadsheets? Can't Afford Enterprise Software?
-								</TextEffect>
+								<h1 className="mx-auto mt-8 max-w-4xl text-5xl max-md:font-semibold md:text-7xl lg:mt-16 xl:text-[5.25rem]">
+									<TextEffect
+										as="span"
+										className="block"
+										preset="fade-in-blur"
+										speedSegment={0.3}
+									>
+										Too Big for Sheets?
+									</TextEffect>
+									<TextEffect
+										as="span"
+										className="block"
+										preset="fade-in-blur"
+										speedSegment={0.3}
+									>
+										Too Small for Enterprise?
+									</TextEffect>
+								</h1>
 								<TextEffect
 									as="p"
 									className="mx-auto mt-8 max-w-2xl text-balance text-lg"

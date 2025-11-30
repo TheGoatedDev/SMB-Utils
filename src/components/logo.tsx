@@ -1,49 +1,36 @@
+import { BriefcaseBusiness } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-export const Logo = ({
-	className,
-	uniColor,
-}: {
-	className?: string;
-	uniColor?: boolean;
-}) => {
+export const Logo = ({ className }: { className?: string }) => {
 	return (
-		<span
+		<div
 			className={cn(
-				"h-5 text-foreground font-semibold text-lg tracking-tight",
+				"flex items-center gap-2 font-semibold text-foreground text-lg tracking-tight",
 				className,
 			)}
 		>
-			SMB Utils
-		</span>
+			<BriefcaseBusiness className="size-5" />
+			<span>SMB Utils</span>
+		</div>
 	);
 };
 
-export const LogoIcon = ({
-	className,
-	uniColor,
-}: {
-	className?: string;
-	uniColor?: boolean;
-}) => {
+export const LogoIcon = ({ className }: { className?: string }) => {
 	return (
-		<span
-			className={cn("size-5 text-foreground font-semibold text-sm", className)}
-		>
-			SMB
-		</span>
+		<BriefcaseBusiness className={cn("size-5 text-foreground", className)} />
 	);
 };
 
 export const LogoStroke = ({ className }: { className?: string }) => {
 	return (
-		<span
+		<div
 			className={cn(
-				"size-7 text-foreground font-semibold text-base tracking-tight",
+				"flex items-center gap-2 font-semibold text-base text-foreground tracking-tight",
 				className,
 			)}
 		>
-			SMB Utils
-		</span>
+			<BriefcaseBusiness className="size-7" />
+			<span>SMB Utils</span>
+		</div>
 	);
 };
