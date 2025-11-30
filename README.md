@@ -86,7 +86,6 @@ This project is built with the [T3 Stack](https://create.t3.gg/) and modern web 
 - `src/components` - React components (UI library, shared components)
 - `src/emails` - React Email templates
 - `prisma/schema.prisma` - Database schema definition
-- `AI_NOTES/` - Project documentation and design notes
 
 ## License
 

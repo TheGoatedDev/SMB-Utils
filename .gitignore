@@ -45,6 +45,8 @@ yarn-error.log*
 # idea files
 .idea
 
+.cursor
+
 generated
 
 AI_NOTES
